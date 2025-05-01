@@ -1,0 +1,1532 @@
+[
+    {
+        "label": "ﺍ",
+        "name": "Alif",
+        "value": 1,
+        "short_vowels": {
+            "fatha": "أَ",
+            "kasrah": "إِ",
+            "damma": "أُ"
+        },
+        "long_vowels": {
+            "fatha": "آ",
+            "kasrah": "إِي",
+            "damma": "أُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "a",
+                "kasrah": "i",
+                "damma": "u"
+            },
+            "long": {
+                "fatha": "ā",
+                "kasrah": "ī",
+                "damma": "ū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "أَمل",
+                "kasrah": "إِكرام",
+                "damma": "أُفق"
+            },
+            "long": {
+                "fatha": "آل",
+                "kasrah": "إِيمَان",
+                "damma": "أُولَى"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Hope",
+                "kasrah": "Generosity",
+                "damma": "Horizon"
+            },
+            "long": {
+                "fatha": "Family",
+                "kasrah": "Faith",
+                "damma": "First"
+            }
+        }
+    },
+    {
+        "label": "ﺏ",
+        "name": "Ba",
+        "value": 2,
+        "short_vowels": {
+            "fatha": "بَ",
+            "kasrah": "بِ",
+            "damma": "بُ"
+        },
+        "long_vowels": {
+            "fatha": "با",
+            "kasrah": "بِي",
+            "damma": "بُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "ba",
+                "kasrah": "bi",
+                "damma": "bu"
+            },
+            "long": {
+                "fatha": "bā",
+                "kasrah": "bī",
+                "damma": "bū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "بَيت",
+                "kasrah": "بِنت",
+                "damma": "بُستان"
+            },
+            "long": {
+                "fatha": "باب",
+                "kasrah": "بِيع",
+                "damma": "بُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "House",
+                "kasrah": "Girl",
+                "damma": "Garden"
+            },
+            "long": {
+                "fatha": "Door",
+                "kasrah": "Sale",
+                "damma": "Boor"
+            }
+        }
+    },
+    {
+        "label": "ﺕ",
+        "name": "Ta",
+        "value": 3,
+        "short_vowels": {
+            "fatha": "تَ",
+            "kasrah": "تِ",
+            "damma": "تُ"
+        },
+        "long_vowels": {
+            "fatha": "تا",
+            "kasrah": "تِي",
+            "damma": "تُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "ta",
+                "kasrah": "ti",
+                "damma": "tu"
+            },
+            "long": {
+                "fatha": "tā",
+                "kasrah": "tī",
+                "damma": "tū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "تَفاح",
+                "kasrah": "تِمر",
+                "damma": "تُفاح"
+            },
+            "long": {
+                "fatha": "تاب",
+                "kasrah": "تِيل",
+                "damma": "تُوت"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Apple",
+                "kasrah": "Dates",
+                "damma": "Apple (plural)"
+            },
+            "long": {
+                "fatha": "Repent",
+                "kasrah": "Teal",
+                "damma": "Mulberry"
+            }
+        }
+    },
+    {
+        "label": "ﺙ",
+        "name": "Tha",
+        "value": 4,
+        "short_vowels": {
+            "fatha": "ثَ",
+            "kasrah": "ثِ",
+            "damma": "ثُ"
+        },
+        "long_vowels": {
+            "fatha": "ثا",
+            "kasrah": "ثِي",
+            "damma": "ثُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "tha",
+                "kasrah": "thi",
+                "damma": "thu"
+            },
+            "long": {
+                "fatha": "thā",
+                "kasrah": "thī",
+                "damma": "thū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "ثَعلب",
+                "kasrah": "ثِمار",
+                "damma": "ثُعْبُو"
+            },
+            "long": {
+                "fatha": "ثال",
+                "kasrah": "ثِير",
+                "damma": "ثُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Fox",
+                "kasrah": "Fruits",
+                "damma": "Snake"
+            },
+            "long": {
+                "fatha": "Statue",
+                "kasrah": "Bull",
+                "damma": "Ox"
+            }
+        }
+    },
+    {
+        "label": "ﺝ",
+        "name": "Jeem",
+        "value": 5,
+        "short_vowels": {
+            "fatha": "جَ",
+            "kasrah": "جِ",
+            "damma": "جُ"
+        },
+        "long_vowels": {
+            "fatha": "جا",
+            "kasrah": "جِي",
+            "damma": "جُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "ja",
+                "kasrah": "ji",
+                "damma": "ju"
+            },
+            "long": {
+                "fatha": "jā",
+                "kasrah": "jī",
+                "damma": "jū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "جَبل",
+                "kasrah": "جِدار",
+                "damma": "جُمل"
+            },
+            "long": {
+                "fatha": "جار",
+                "kasrah": "جِير",
+                "damma": "جُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Mountain",
+                "kasrah": "Wall",
+                "damma": "Camel"
+            },
+            "long": {
+                "fatha": "Neighbor",
+                "kasrah": "Lime",
+                "damma": "Injustice"
+            }
+        }
+    },
+    {
+        "label": "ﺡ",
+        "name": "Ha",
+        "value": 6,
+        "short_vowels": {
+            "fatha": "حَ",
+            "kasrah": "حِ",
+            "damma": "حُ"
+        },
+        "long_vowels": {
+            "fatha": "حا",
+            "kasrah": "حِي",
+            "damma": "حُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "ha",
+                "kasrah": "hi",
+                "damma": "hu"
+            },
+            "long": {
+                "fatha": "hā",
+                "kasrah": "hī",
+                "damma": "hū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "حَجر",
+                "kasrah": "حِصان",
+                "damma": "حُلم"
+            },
+            "long": {
+                "fatha": "حال",
+                "kasrah": "حِير",
+                "damma": "حُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Stone",
+                "kasrah": "Horse",
+                "damma": "Dream"
+            },
+            "long": {
+                "fatha": "State",
+                "kasrah": "Confusion",
+                "damma": "Houri"
+            }
+        }
+    },
+    {
+        "label": "ﺥ",
+        "name": "Kha",
+        "value": 7,
+        "short_vowels": {
+            "fatha": "خَ",
+            "kasrah": "خِ",
+            "damma": "خُ"
+        },
+        "long_vowels": {
+            "fatha": "خا",
+            "kasrah": "خِي",
+            "damma": "خُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "kha",
+                "kasrah": "khi",
+                "damma": "khu"
+            },
+            "long": {
+                "fatha": "khā",
+                "kasrah": "khī",
+                "damma": "khū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "خَريف",
+                "kasrah": "خِزان",
+                "damma": "خُبز"
+            },
+            "long": {
+                "fatha": "خال",
+                "kasrah": "خِير",
+                "damma": "خُود"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Autumn",
+                "kasrah": "Tank",
+                "damma": "Bread"
+            },
+            "long": {
+                "fatha": "Maternal Uncle",
+                "kasrah": "Goodness",
+                "damma": "Cheek"
+            }
+        }
+    },
+    {
+        "label": "ﺥ",
+        "name": "Kha",
+        "value": 7,
+        "short_vowels": {
+            "fatha": "خَ",
+            "kasrah": "خِ",
+            "damma": "خُ"
+        },
+        "long_vowels": {
+            "fatha": "خا",
+            "kasrah": "خِي",
+            "damma": "خُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "kha",
+                "kasrah": "khi",
+                "damma": "khu"
+            },
+            "long": {
+                "fatha": "khā",
+                "kasrah": "khī",
+                "damma": "khū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "خَريف",
+                "kasrah": "خِزان",
+                "damma": "خُبز"
+            },
+            "long": {
+                "fatha": "خال",
+                "kasrah": "خِير",
+                "damma": "خُود"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Autumn",
+                "kasrah": "Tank",
+                "damma": "Bread"
+            },
+            "long": {
+                "fatha": "Maternal Uncle",
+                "kasrah": "Goodness",
+                "damma": "Cheek"
+            }
+        }
+    },
+    {
+        "label": "ﺩ",
+        "name": "Dal",
+        "value": 8,
+        "short_vowels": {
+            "fatha": "دَ",
+            "kasrah": "دِ",
+            "damma": "دُ"
+        },
+        "long_vowels": {
+            "fatha": "دا",
+            "kasrah": "دِي",
+            "damma": "دُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "da",
+                "kasrah": "di",
+                "damma": "du"
+            },
+            "long": {
+                "fatha": "dā",
+                "kasrah": "dī",
+                "damma": "dū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "دَرس",
+                "kasrah": "دِفاع",
+                "damma": "دُب"
+            },
+            "long": {
+                "fatha": "دال",
+                "kasrah": "دِير",
+                "damma": "دُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Lesson",
+                "kasrah": "Defense",
+                "damma": "Bear"
+            },
+            "long": {
+                "fatha": "Dall",
+                "kasrah": "Monastery",
+                "damma": "Turn"
+            }
+        }
+    },
+    {
+        "label": "ﺫ",
+        "name": "Thal",
+        "value": 9,
+        "short_vowels": {
+            "fatha": "ذَ",
+            "kasrah": "ذِ",
+            "damma": "ذُ"
+        },
+        "long_vowels": {
+            "fatha": "ذا",
+            "kasrah": "ذِي",
+            "damma": "ذُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "tha",
+                "kasrah": "thi",
+                "damma": "thu"
+            },
+            "long": {
+                "fatha": "thā",
+                "kasrah": "thī",
+                "damma": "thū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "ذَهاب",
+                "kasrah": "ذِكر",
+                "damma": "ذُباب"
+            },
+            "long": {
+                "fatha": "ذال",
+                "kasrah": "ذِيل",
+                "damma": "ذُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Going",
+                "kasrah": "Remembrance",
+                "damma": "Flies"
+            },
+            "long": {
+                "fatha": "Thall",
+                "kasrah": "Tail",
+                "damma": "Light"
+            }
+        }
+    },
+    {
+        "label": "ﺭ",
+        "name": "Ra",
+        "value": 10,
+        "short_vowels": {
+            "fatha": "رَ",
+            "kasrah": "رِ",
+            "damma": "رُ"
+        },
+        "long_vowels": {
+            "fatha": "را",
+            "kasrah": "رِي",
+            "damma": "رُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "ra",
+                "kasrah": "ri",
+                "damma": "ru"
+            },
+            "long": {
+                "fatha": "rā",
+                "kasrah": "rī",
+                "damma": "rū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "رَجل",
+                "kasrah": "رِحلة",
+                "damma": "رُكن"
+            },
+            "long": {
+                "fatha": "رال",
+                "kasrah": "رِيل",
+                "damma": "رُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Man",
+                "kasrah": "Trip",
+                "damma": "Corner"
+            },
+            "long": {
+                "fatha": "Rall",
+                "kasrah": "Reel",
+                "damma": "Light"
+            }
+        }
+    },
+    {
+        "label": "ﺯ",
+        "name": "Zay",
+        "value": 11,
+        "short_vowels": {
+            "fatha": "زَ",
+            "kasrah": "زِ",
+            "damma": "زُ"
+        },
+        "long_vowels": {
+            "fatha": "زا",
+            "kasrah": "زِي",
+            "damma": "زُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "za",
+                "kasrah": "zi",
+                "damma": "zu"
+            },
+            "long": {
+                "fatha": "zā",
+                "kasrah": "zī",
+                "damma": "zū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "زَهر",
+                "kasrah": "زِينة",
+                "damma": "زُهور"
+            },
+            "long": {
+                "fatha": "زال",
+                "kasrah": "زِير",
+                "damma": "زُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Flower",
+                "kasrah": "Decoration",
+                "damma": "Flowers"
+            },
+            "long": {
+                "fatha": "He Disappeared",
+                "kasrah": "Visitor",
+                "damma": "False"
+            }
+        }
+    },
+    {
+        "label": "ﺱ",
+        "name": "Sin",
+        "value": 12,
+        "short_vowels": {
+            "fatha": "سَ",
+            "kasrah": "سِ",
+            "damma": "سُ"
+        },
+        "long_vowels": {
+            "fatha": "سا",
+            "kasrah": "سِي",
+            "damma": "سُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "sa",
+                "kasrah": "si",
+                "damma": "su"
+            },
+            "long": {
+                "fatha": "sā",
+                "kasrah": "sī",
+                "damma": "sū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "سَلام",
+                "kasrah": "سِحر",
+                "damma": "سُكر"
+            },
+            "long": {
+                "fatha": "سال",
+                "kasrah": "سِير",
+                "damma": "سُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Peace",
+                "kasrah": "Magic",
+                "damma": "Drunkenness"
+            },
+            "long": {
+                "fatha": "He Flowed",
+                "kasrah": "Walk",
+                "damma": "Wall"
+            }
+        }
+    },
+    {
+        "label": "ﺩ",
+        "name": "Shin",
+        "value": 13,
+        "short_vowels": {
+            "fatha": "شَ",
+            "kasrah": "شِ",
+            "damma": "شُ"
+        },
+        "long_vowels": {
+            "fatha": "شا",
+            "kasrah": "شِي",
+            "damma": "شُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "sha",
+                "kasrah": "shi",
+                "damma": "shu"
+            },
+            "long": {
+                "fatha": "shā",
+                "kasrah": "shī",
+                "damma": "shū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "شَمس",
+                "kasrah": "شِعر",
+                "damma": "شُكر"
+            },
+            "long": {
+                "fatha": "شار",
+                "kasrah": "شِير",
+                "damma": "شُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Sun",
+                "kasrah": "Poetry",
+                "damma": "Gratitude"
+            },
+            "long": {
+                "fatha": "Street",
+                "kasrah": "Milk",
+                "damma": "Consultation"
+            }
+        }
+    },
+    {
+        "label": "ﺹ",
+        "name": "Sad",
+        "value": 14,
+        "short_vowels": {
+            "fatha": "صَ",
+            "kasrah": "صِ",
+            "damma": "صُ"
+        },
+        "long_vowels": {
+            "fatha": "صا",
+            "kasrah": "صِي",
+            "damma": "صُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "sa",
+                "kasrah": "si",
+                "damma": "su"
+            },
+            "long": {
+                "fatha": "sā",
+                "kasrah": "sī",
+                "damma": "sū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "صَبر",
+                "kasrah": "صِدق",
+                "damma": "صُوت"
+            },
+            "long": {
+                "fatha": "صال",
+                "kasrah": "صِير",
+                "damma": "صُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Patience",
+                "kasrah": "Truth",
+                "damma": "Voice"
+            },
+            "long": {
+                "fatha": "Settled",
+                "kasrah": "Sire",
+                "damma": "Image"
+            }
+        }
+    },
+    {
+        "label": "ﺽ",
+        "name": "Dad",
+        "value": 15,
+        "short_vowels": {
+            "fatha": "ضَ",
+            "kasrah": "ضِ",
+            "damma": "ضُ"
+        },
+        "long_vowels": {
+            "fatha": "ضا",
+            "kasrah": "ضِي",
+            "damma": "ضُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "da",
+                "kasrah": "di",
+                "damma": "du"
+            },
+            "long": {
+                "fatha": "dā",
+                "kasrah": "dī",
+                "damma": "dū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "ضَرب",
+                "kasrah": "ضِد",
+                "damma": "ضُحى"
+            },
+            "long": {
+                "fatha": "ضال",
+                "kasrah": "ضِير",
+                "damma": "ضُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Hit",
+                "kasrah": "Opposite",
+                "damma": "Morning"
+            },
+            "long": {
+                "fatha": "Lost",
+                "kasrah": "Deer",
+                "damma": "Light"
+            }
+        }
+    },
+    {
+        "label": "ﻁ",
+        "name": "Ta",
+        "value": 16,
+        "short_vowels": {
+            "fatha": "طَ",
+            "kasrah": "طِ",
+            "damma": "طُ"
+        },
+        "long_vowels": {
+            "fatha": "طا",
+            "kasrah": "طِي",
+            "damma": "طُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "ta",
+                "kasrah": "ti",
+                "damma": "tu"
+            },
+            "long": {
+                "fatha": "tā",
+                "kasrah": "tī",
+                "damma": "tū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "طَير",
+                "kasrah": "طِيب",
+                "damma": "طُول"
+            },
+            "long": {
+                "fatha": "طال",
+                "kasrah": "طِير",
+                "damma": "طُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Bird",
+                "kasrah": "Goodness",
+                "damma": "Length"
+            },
+            "long": {
+                "fatha": "He Lengthened",
+                "kasrah": "Birds",
+                "damma": "Mount Tur"
+            }
+        }
+    },
+    {
+        "label": "ﻅ",
+        "name": "Za",
+        "value": 17,
+        "short_vowels": {
+            "fatha": "ظَ",
+            "kasrah": "ظِ",
+            "damma": "ظُ"
+        },
+        "long_vowels": {
+            "fatha": "ظا",
+            "kasrah": "ظِي",
+            "damma": "ظُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "za",
+                "kasrah": "zi",
+                "damma": "zu"
+            },
+            "long": {
+                "fatha": "zā",
+                "kasrah": "zī",
+                "damma": "zū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "ظَهر",
+                "kasrah": "ظِلال",
+                "damma": "ظُلم"
+            },
+            "long": {
+                "fatha": "ظال",
+                "kasrah": "ظِير",
+                "damma": "ظُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Back",
+                "kasrah": "Shadows",
+                "damma": "Injustice"
+            },
+            "long": {
+                "fatha": "He Wronged",
+                "kasrah": "Deer",
+                "damma": "Light"
+            }
+        }
+    },
+    {
+        "label": "ﻉ",
+        "name": "Ain",
+        "value": 18,
+        "short_vowels": {
+            "fatha": "عَ",
+            "kasrah": "عِ",
+            "damma": "عُ"
+        },
+        "long_vowels": {
+            "fatha": "عا",
+            "kasrah": "عِي",
+            "damma": "عُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "ʿa",
+                "kasrah": "ʿi",
+                "damma": "ʿu"
+            },
+            "long": {
+                "fatha": "ʿā",
+                "kasrah": "ʿī",
+                "damma": "ʿū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "عَين",
+                "kasrah": "عِلم",
+                "damma": "عُمر"
+            },
+            "long": {
+                "fatha": "عال",
+                "kasrah": "عِير",
+                "damma": "عُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Eye",
+                "kasrah": "Knowledge",
+                "damma": "Age"
+            },
+            "long": {
+                "fatha": "High",
+                "kasrah": "Donkey",
+                "damma": "Blind"
+            }
+        }
+    },
+    {
+        "label": "ﻍ",
+        "name": "Ghain",
+        "value": 19,
+        "short_vowels": {
+            "fatha": "غَ",
+            "kasrah": "غِ",
+            "damma": "غُ"
+        },
+        "long_vowels": {
+            "fatha": "غا",
+            "kasrah": "غِي",
+            "damma": "غُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "gha",
+                "kasrah": "ghi",
+                "damma": "ghu"
+            },
+            "long": {
+                "fatha": "ghā",
+                "kasrah": "ghī",
+                "damma": "ghū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "غَيم",
+                "kasrah": "غِرب",
+                "damma": "غُروب"
+            },
+            "long": {
+                "fatha": "غال",
+                "kasrah": "غِير",
+                "damma": "غُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Cloud",
+                "kasrah": "West",
+                "damma": "Sunset"
+            },
+            "long": {
+                "fatha": "Expensive",
+                "kasrah": "Others",
+                "damma": "Depth"
+            }
+        }
+    },
+    {
+        "label": "ﻑ",
+        "name": "Fa",
+        "value": 20,
+        "short_vowels": {
+            "fatha": "فَ",
+            "kasrah": "فِ",
+            "damma": "فُ"
+        },
+        "long_vowels": {
+            "fatha": "فا",
+            "kasrah": "فِي",
+            "damma": "فُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "fa",
+                "kasrah": "fi",
+                "damma": "fu"
+            },
+            "long": {
+                "fatha": "fā",
+                "kasrah": "fī",
+                "damma": "fū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "فَرس",
+                "kasrah": "فِكر",
+                "damma": "فُلك"
+            },
+            "long": {
+                "fatha": "فال",
+                "kasrah": "فِيل",
+                "damma": "فُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Horse",
+                "kasrah": "Thought",
+                "damma": "Ship"
+            },
+            "long": {
+                "fatha": "Omen",
+                "kasrah": "Elephant",
+                "damma": "Immediately"
+            }
+        }
+    },
+    {
+        "label": "ﻕ",
+        "name": "Qaf",
+        "value": 21,
+        "short_vowels": {
+            "fatha": "قَ",
+            "kasrah": "قِ",
+            "damma": "قُ"
+        },
+        "long_vowels": {
+            "fatha": "قا",
+            "kasrah": "قِي",
+            "damma": "قُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "qa",
+                "kasrah": "qi",
+                "damma": "qu"
+            },
+            "long": {
+                "fatha": "qā",
+                "kasrah": "qī",
+                "damma": "qū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "قَلب",
+                "kasrah": "قِرد",
+                "damma": "قُمر"
+            },
+            "long": {
+                "fatha": "قال",
+                "kasrah": "قِير",
+                "damma": "قُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Heart",
+                "kasrah": "Monkey",
+                "damma": "Moon"
+            },
+            "long": {
+                "fatha": "He Said",
+                "kasrah": "Tar",
+                "damma": "Cup"
+            }
+        }
+    },
+    {
+        "label": "ﻙ",
+        "name": "Kaf",
+        "value": 22,
+        "short_vowels": {
+            "fatha": "كَ",
+            "kasrah": "كِ",
+            "damma": "كُ"
+        },
+        "long_vowels": {
+            "fatha": "كا",
+            "kasrah": "كِي",
+            "damma": "كُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "ka",
+                "kasrah": "ki",
+                "damma": "ku"
+            },
+            "long": {
+                "fatha": "kā",
+                "kasrah": "kī",
+                "damma": "kū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "كِتاب",
+                "kasrah": "كِرسي",
+                "damma": "كُرة"
+            },
+            "long": {
+                "fatha": "كال",
+                "kasrah": "كِيل",
+                "damma": "كُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Book",
+                "kasrah": "Chair",
+                "damma": "Ball"
+            },
+            "long": {
+                "fatha": "He Measured",
+                "kasrah": "Kil",
+                "damma": "Light"
+            }
+        }
+    },
+    {
+        "label": "ﻝ",
+        "name": "Lam",
+        "value": 23,
+        "short_vowels": {
+            "fatha": "لَ",
+            "kasrah": "لِ",
+            "damma": "لُ"
+        },
+        "long_vowels": {
+            "fatha": "لا",
+            "kasrah": "لِي",
+            "damma": "لُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "la",
+                "kasrah": "li",
+                "damma": "lu"
+            },
+            "long": {
+                "fatha": "lā",
+                "kasrah": "lī",
+                "damma": "lū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "لَيل",
+                "kasrah": "لِسان",
+                "damma": "لُغة"
+            },
+            "long": {
+                "fatha": "لال",
+                "kasrah": "لِير",
+                "damma": "لُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Night",
+                "kasrah": "Tongue",
+                "damma": "Language"
+            },
+            "long": {
+                "fatha": "Lull",
+                "kasrah": "Lira",
+                "damma": "Lure"
+            }
+        }
+    },
+    {
+        "label": "ﻡ",
+        "name": "Mim",
+        "value": 24,
+        "short_vowels": {
+            "fatha": "مَ",
+            "kasrah": "مِ",
+            "damma": "مُ"
+        },
+        "long_vowels": {
+            "fatha": "ما",
+            "kasrah": "مِي",
+            "damma": "مُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "ma",
+                "kasrah": "mi",
+                "damma": "mu"
+            },
+            "long": {
+                "fatha": "mā",
+                "kasrah": "mī",
+                "damma": "mū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "مَاء",
+                "kasrah": "مِفتاح",
+                "damma": "مُدينة"
+            },
+            "long": {
+                "fatha": "مال",
+                "kasrah": "مِيل",
+                "damma": "مُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Water",
+                "kasrah": "Key",
+                "damma": "City"
+            },
+            "long": {
+                "fatha": "Wealth",
+                "kasrah": "Mile",
+                "damma": "Light"
+            }
+        }
+    },
+    {
+        "label": "ﻥ",
+        "name": "Nun",
+        "value": 25,
+        "short_vowels": {
+            "fatha": "نَ",
+            "kasrah": "نِ",
+            "damma": "نُ"
+        },
+        "long_vowels": {
+            "fatha": "نا",
+            "kasrah": "نِي",
+            "damma": "نُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "na",
+                "kasrah": "ni",
+                "damma": "nu"
+            },
+            "long": {
+                "fatha": "nā",
+                "kasrah": "nī",
+                "damma": "nū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "نَهر",
+                "kasrah": "نِهاية",
+                "damma": "نُور"
+            },
+            "long": {
+                "fatha": "نال",
+                "kasrah": "نِيل",
+                "damma": "نُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "River",
+                "kasrah": "End",
+                "damma": "Light"
+            },
+            "long": {
+                "fatha": "He Achieved",
+                "kasrah": "Nile",
+                "damma": "Light"
+            }
+        }
+    },
+    {
+        "label": "ﻩ",
+        "name": "Ha",
+        "value": 26,
+        "short_vowels": {
+            "fatha": "هَ",
+            "kasrah": "هِ",
+            "damma": "هُ"
+        },
+        "long_vowels": {
+            "fatha": "ها",
+            "kasrah": "هِي",
+            "damma": "هُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "ha",
+                "kasrah": "hi",
+                "damma": "hu"
+            },
+            "long": {
+                "fatha": "hā",
+                "kasrah": "hī",
+                "damma": "hū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "هَواء",
+                "kasrah": "هِلال",
+                "damma": "هُدُو"
+            },
+            "long": {
+                "fatha": "هال",
+                "kasrah": "هِير",
+                "damma": "هُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Air",
+                "kasrah": "Crescent",
+                "damma": "Calm"
+            },
+            "long": {
+                "fatha": "He Overwhelmed",
+                "kasrah": "Hire",
+                "damma": "Light"
+            }
+        }
+    },
+    {
+        "label": "ﻭ",
+        "name": "Waw",
+        "value": 27,
+        "short_vowels": {
+            "fatha": "وَ",
+            "kasrah": "وِ",
+            "damma": "وُ"
+        },
+        "long_vowels": {
+            "fatha": "وا",
+            "kasrah": "وِي",
+            "damma": "وُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "wa",
+                "kasrah": "wi",
+                "damma": "wu"
+            },
+            "long": {
+                "fatha": "wā",
+                "kasrah": "wī",
+                "damma": "wū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "وَرد",
+                "kasrah": "وِزن",
+                "damma": "وُجود"
+            },
+            "long": {
+                "fatha": "وال",
+                "kasrah": "وِيل",
+                "damma": "وُود"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Rose",
+                "kasrah": "Weight",
+                "damma": "Existence"
+            },
+            "long": {
+                "fatha": "And",
+                "kasrah": "Woe",
+                "damma": "Love"
+            }
+        }
+    },
+    {
+        "label": "ﻱ",
+        "name": "Ya",
+        "value": 28,
+        "short_vowels": {
+            "fatha": "يَ",
+            "kasrah": "يِ",
+            "damma": "يُ"
+        },
+        "long_vowels": {
+            "fatha": "يا",
+            "kasrah": "يِي",
+            "damma": "يُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "ya",
+                "kasrah": "yi",
+                "damma": "yu"
+            },
+            "long": {
+                "fatha": "yā",
+                "kasrah": "yī",
+                "damma": "yū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "يَد",
+                "kasrah": "يِسار",
+                "damma": "يُسر"
+            },
+            "long": {
+                "fatha": "يال",
+                "kasrah": "يِير",
+                "damma": "يُور"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Hand",
+                "kasrah": "Left",
+                "damma": "Ease"
+            },
+            "long": {
+                "fatha": "Yell",
+                "kasrah": "Year",
+                "damma": "Light"
+            }
+        }
+    },
+    {
+        "label": "ء",
+        "name": "Hamzah",
+        "value": 29,
+        "short_vowels": {
+            "fatha": "أَ",
+            "kasrah": "إِ",
+            "damma": "أُ"
+        },
+        "long_vowels": {
+            "fatha": "آ",
+            "kasrah": "إِي",
+            "damma": "أُو"
+        },
+        "pronunciation": {
+            "short": {
+                "fatha": "a",
+                "kasrah": "i",
+                "damma": "u"
+            },
+            "long": {
+                "fatha": "ā",
+                "kasrah": "ī",
+                "damma": "ū"
+            }
+        },
+        "examples": {
+            "short": {
+                "fatha": "أَكل",
+                "kasrah": "إِسلام",
+                "damma": "أُذن"
+            },
+            "long": {
+                "fatha": "آل",
+                "kasrah": "إِيمَان",
+                "damma": "أُولَى"
+            }
+        },
+        "meanings": {
+            "short": {
+                "fatha": "Eat",
+                "kasrah": "Islam",
+                "damma": "Ear"
+            },
+            "long": {
+                "fatha": "Family",
+                "kasrah": "Faith",
+                "damma": "First"
+            }
+        }
+    }
+]

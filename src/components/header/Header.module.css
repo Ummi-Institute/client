@@ -1,0 +1,107 @@
+/* main */
+.mainHeader {
+    padding: rem(40px) rem(16px);
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    @media (min-width: rem(768px)) {
+        padding: rem(40px) rem(130px);
+    }
+}
+
+.mainOverlay {
+    z-index: 10;
+    @media (min-width: rem(1024px)) {
+        display: none;
+    }
+}
+
+.mainMobileNav {
+    position: absolute;
+    background-color: var(--mobile-nav-background);
+    color: var(--mobilenav-text);
+    z-index: 100;
+    top: rem(80px);
+    right: 0;
+    width: rem(80%);
+    padding: rem(16px);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+    li a,
+    .signin {
+        padding: rem(8px);
+        font-size: rem(18px);
+    }
+
+    @media (min-width: rem(520px)) {
+        .accountButton {
+            display: none;
+        }
+    }
+
+    @media (min-width: rem(1024px)) {
+        display: none;
+    }
+}
+
+.mainLeftSection {
+    height: rem(34px);
+
+    .logo {
+        width: 'auto';
+    }
+}
+
+.mainRightSection {
+    .mainSignin,
+    .accountButton {
+        display: none;
+    }
+
+    .mainLinks {
+        display: none;
+    }
+
+    @media (min-width: rem(1024px)) {
+        .mainLinks {
+            display: flex;
+        }
+    }
+
+    .mainBurger {
+        position: relative;
+        z-index: 100;
+    }
+
+    @media (min-width: rem(520px)) {
+        .accountButton {
+            display: block;
+        }
+    }
+
+    @media (min-width: rem(768px)) {
+        .mainSignin {
+            display: block;
+            font-size: rem(14px);
+        }
+    }
+
+    @media (min-width: rem(1024px)) {
+        .burger {
+            display: none;
+        }
+    }
+}
+
+.active {
+    background-color: var(--active-nav-link-background);
+    color: var(--active-nav-link-text);
+    border: 2px solid var(--active-nav-link-border);
+}
+.inactive {
+    background-color: transparent;
+    color: 'inherit';
+    border: 2px solid transparent;
+}

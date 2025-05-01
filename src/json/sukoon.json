@@ -1,0 +1,263 @@
+[
+    {
+        "label": "ﺍ",
+        "name": "Alif",
+        "value": 1,
+        "sukoon": "إِاْ",
+        "pronunciation": "إِا",
+        "example": "إِاْمل",
+        "meaning": "Hope"
+    },
+    {
+        "label": "ﺏ",
+        "name": "Ba",
+        "value": 2,
+        "sukoon": "إِبْ",
+        "pronunciation": "إِب",
+        "example": "إِبْن",
+        "meaning": "Son"
+    },
+    {
+        "label": "ﺕ",
+        "name": "Ta",
+        "value": 3,
+        "sukoon": "إِتْ",
+        "pronunciation": "إِت",
+        "example": "إِتْقَان",
+        "meaning": "Mastery"
+    },
+    {
+        "label": "ﺙ",
+        "name": "Tha",
+        "value": 4,
+        "sukoon": "إِثْ",
+        "pronunciation": "إِث",
+        "example": "إِثْرَاء",
+        "meaning": "Enrichment"
+    },
+    {
+        "label": "ﺝ",
+        "name": "Jim",
+        "value": 5,
+        "sukoon": "إِجْ",
+        "pronunciation": "إِج",
+        "example": "إِجْرَاء",
+        "meaning": "Procedure"
+    },
+    {
+        "label": "ﺡ",
+        "name": "Ha",
+        "value": 6,
+        "sukoon": "إِحْ",
+        "pronunciation": "إِح",
+        "example": "إِحْسَان",
+        "meaning": "Kindness"
+    },
+    {
+        "label": "ﺥ",
+        "name": "Kha",
+        "value": 7,
+        "sukoon": "إِخْ",
+        "pronunciation": "إِخ",
+        "example": "إِخْوَة",
+        "meaning": "Brotherhood"
+    },
+    {
+        "label": "ﺩ",
+        "name": "Dal",
+        "value": 8,
+        "sukoon": "إِدْ",
+        "pronunciation": "إِد",
+        "example": "إِدْرَاك",
+        "meaning": "Realization"
+    },
+    {
+        "label": "ﺫ",
+        "name": "Dhal",
+        "value": 9,
+        "sukoon": "إِذْ",
+        "pronunciation": "إِذ",
+        "example": "إِذْن",
+        "meaning": "Permission"
+    },
+    {
+        "label": "ﺭ",
+        "name": "Ra",
+        "value": 10,
+        "sukoon": "إِرْ",
+        "pronunciation": "إِر",
+        "example": "إِرْتِبَاط",
+        "meaning": "Connection"
+    },
+    {
+        "label": "ﺯ",
+        "name": "Zay",
+        "value": 11,
+        "sukoon": "إِزْ",
+        "pronunciation": "إِز",
+        "example": "إِزْدِهَار",
+        "meaning": "Prosperity"
+    },
+    {
+        "label": "ﺱ",
+        "name": "Sin",
+        "value": 12,
+        "sukoon": "إِسْ",
+        "pronunciation": "إِس",
+        "example": "إِسْم",
+        "meaning": "Name"
+    },
+    {
+        "label": "ﺵ",
+        "name": "Shin",
+        "value": 13,
+        "sukoon": "إِشْ",
+        "pronunciation": "إِش",
+        "example": "إِشْتِرَاك",
+        "meaning": "Subscription"
+    },
+    {
+        "label": "ﺹ",
+        "name": "Sad",
+        "value": 14,
+        "sukoon": "إِصْ",
+        "pronunciation": "إِص",
+        "example": "إِصْلَاح",
+        "meaning": "Reform"
+    },
+    {
+        "label": "ﺽ",
+        "name": "Dad",
+        "value": 15,
+        "sukoon": "إِضْ",
+        "pronunciation": "إِض",
+        "example": "إِضْرَاب",
+        "meaning": "Strike"
+    },
+    {
+        "label": "ﻁ",
+        "name": "Ta",
+        "value": 16,
+        "sukoon": "إِطْ",
+        "pronunciation": "إِط",
+        "example": "إِطْمِئْنَان",
+        "meaning": "Reassurance"
+    },
+    {
+        "label": "ﻅ",
+        "name": "Za",
+        "value": 17,
+        "sukoon": "إِظْ",
+        "pronunciation": "إِظ",
+        "example": "إِظْهَار",
+        "meaning": "Manifestation"
+    },
+    {
+        "label": "ﻉ",
+        "name": "Ain",
+        "value": 18,
+        "sukoon": "إِعْ",
+        "pronunciation": "إِع",
+        "example": "إِعْتِرَاف",
+        "meaning": "Confession"
+    },
+    {
+        "label": "ﻍ",
+        "name": "Ghain",
+        "value": 19,
+        "sukoon": "إِغْ",
+        "pronunciation": "إِغ",
+        "example": "إِغْتِسَال",
+        "meaning": "Washing"
+    },
+    {
+        "label": "ﻑ",
+        "name": "Fa",
+        "value": 20,
+        "sukoon": "إِفْ",
+        "pronunciation": "إِف",
+        "example": "إِفْتِرَاض",
+        "meaning": "Assumption"
+    },
+    {
+        "label": "ﻕ",
+        "name": "Qaf",
+        "value": 21,
+        "sukoon": "إِقْ",
+        "pronunciation": "إِق",
+        "example": "إِقْبَال",
+        "meaning": "Approach"
+    },
+    {
+        "label": "ﻙ",
+        "name": "Kaf",
+        "value": 22,
+        "sukoon": "إِكْ",
+        "pronunciation": "إِك",
+        "example": "إِكْمَال",
+        "meaning": "Completion"
+    },
+    {
+        "label": "ﻝ",
+        "name": "Lam",
+        "value": 23,
+        "sukoon": "إِلْ",
+        "pronunciation": "إِل",
+        "example": "إِلْغَاء",
+        "meaning": "Cancellation"
+    },
+    {
+        "label": "ﻡ",
+        "name": "Meem",
+        "value": 24,
+        "sukoon": "إِمْ",
+        "pronunciation": "إِم",
+        "example": "إِمْكَان",
+        "meaning": "Possibility"
+    },
+    {
+        "label": "ﻥ",
+        "name": "Noon",
+        "value": 25,
+        "sukoon": "إِنْ",
+        "pronunciation": "إِن",
+        "example": "إِنْسَان",
+        "meaning": "Human"
+    },
+    {
+        "label": "ﻩ",
+        "name": "Ha",
+        "value": 26,
+        "sukoon": "إِهْ",
+        "pronunciation": "إِه",
+        "example": "إِهْمَال",
+        "meaning": "Neglect"
+    },
+    {
+        "label": "ﻭ",
+        "name": "Waw",
+        "value": 27,
+        "sukoon": "إِوْ",
+        "pronunciation": "إِو",
+        "example": "إِوْقَاف",
+        "meaning": "Suspension"
+    },
+    {
+        "label": "ﻱ",
+        "name": "Ya",
+        "value": 28,
+        "sukoon": "إِيْ",
+        "pronunciation": "إِي",
+        "example": "إِيْمَان",
+        "meaning": "Faith"
+    },
+    {
+        "label": "ﺀ",
+        "name": "Hamzah",
+        "value": 29,
+        "sukoon": "إِءْ",
+        "pronunciation": "إِء",
+        "example": "إِءْمَان",
+        "meaning": "Faith"
+    }
+]

@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+}
+.pagHeader {
+    width: 90%;
+    max-width: 600px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 800px;
+    height: 70vh;
+    max-height: 520px;
+    background-color: white;
+}

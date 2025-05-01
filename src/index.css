@@ -1,0 +1,54 @@
+@import './styles/css/fonts.css';
+
+:root {
+    --primary: #f5f5f5;
+    --primary-hover: #ebebeb;
+    --secondary: #e0e0e0;
+
+    --primary-button: #8d2eff;
+    --primary-button-hover: #7c27ff;
+    --primaty-button-border: #6829b3;
+    --primary-button-text: #fff;
+
+    --secondary-button: #ffbd3f;
+    --secondary-button-hover: #fbb554;
+    --secondary-button-border: #ffb347;
+    --secondary-button-text: #000000;
+
+    --mobile-nav-background: #fff;
+    --mobile-nav-text: #000;
+
+    --active-nav-link-background: #f7f6fe;
+    --active-nav-link-text: #151965;
+    --active-nav-link-border: #ffb347;
+
+    --gradient-primary-button-from: #8d2eff;
+    --gradient-primary-button-to: #6829b3;
+    --gradient-primary-button-deg: 90deg;
+    --gradient-primary-button-color: #fff;
+
+    --gradient-secondary-button-from: #ffcc33;
+    --gradient-secondary-button-to: #ffb347;
+    --gradient-secondary-button-deg: 90deg;
+    --gradient-secondary-button-color: #000;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+[data-disabled='true'] {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+input[data-error='true'],
+input[data-invalid='true'] {
+    background-color: var(--mantine-color-red-light);
+}

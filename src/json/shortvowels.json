@@ -1,0 +1,345 @@
+[
+    {
+        "label": "ﺍ",
+        "name": "Alif",
+        "value": 1,
+        "fatha": "أَ",
+        "kasrah": "إِ",
+        "damma": "أُ",
+        "pronunciation": { "fatha": "a", "kasrah": "i", "damma": "u" },
+        "example": { "fatha": "أَمل", "kasrah": "إِكرام", "damma": "أُفق" },
+        "meaning": {
+            "fatha": "Hope",
+            "kasrah": "Generosity",
+            "damma": "Horizon"
+        }
+    },
+    {
+        "label": "ﺏ",
+        "name": "Ba",
+        "value": 2,
+        "fatha": "بَ",
+        "kasrah": "بِ",
+        "damma": "بُ",
+        "pronunciation": { "fatha": "ba", "kasrah": "bi", "damma": "bu" },
+        "example": { "fatha": "بَاب", "kasrah": "بِطَاقَة", "damma": "بُرْج" },
+        "meaning": { "fatha": "Door", "kasrah": "Card", "damma": "Tower" }
+    },
+    {
+        "label": "ﺕ",
+        "name": "Ta",
+        "value": 3,
+        "fatha": "تَ",
+        "kasrah": "تِ",
+        "damma": "تُ",
+        "pronunciation": { "fatha": "ta", "kasrah": "ti", "damma": "tu" },
+        "example": { "fatha": "تَاج", "kasrah": "تِمْثَال", "damma": "تُرَاب" },
+        "meaning": { "fatha": "Crown", "kasrah": "Statue", "damma": "Soil" }
+    },
+    {
+        "label": "ﺙ",
+        "name": "Tha",
+        "value": 4,
+        "fatha": "ثَ",
+        "kasrah": "ثِ",
+        "damma": "ثُ",
+        "pronunciation": { "fatha": "tha", "kasrah": "thi", "damma": "thu" },
+        "example": { "fatha": "ثَمر", "kasrah": "ثِقَة", "damma": "ثُعْبَان" },
+        "meaning": { "fatha": "Fruit", "kasrah": "Trust", "damma": "Snake" }
+    },
+    {
+        "label": "ﺝ",
+        "name": "Jim",
+        "value": 5,
+        "fatha": "جَ",
+        "kasrah": "جِ",
+        "damma": "جُ",
+        "pronunciation": { "fatha": "ja", "kasrah": "ji", "damma": "ju" },
+        "example": { "fatha": "جَبل", "kasrah": "جِدَار", "damma": "جُبن" },
+        "meaning": { "fatha": "Mountain", "kasrah": "Wall", "damma": "Cheese" }
+    },
+    {
+        "label": "ﺡ",
+        "name": "Ha",
+        "value": 6,
+        "fatha": "حَ",
+        "kasrah": "حِ",
+        "damma": "حُ",
+        "pronunciation": { "fatha": "ha", "kasrah": "hi", "damma": "hu" },
+        "example": { "fatha": "حَصَان", "kasrah": "حِكَايَة", "damma": "حُب" },
+        "meaning": { "fatha": "Horse", "kasrah": "Story", "damma": "Love" }
+    },
+    {
+        "label": "ﺥ",
+        "name": "Kha",
+        "value": 7,
+        "fatha": "خَ",
+        "kasrah": "خِ",
+        "damma": "خُ",
+        "pronunciation": { "fatha": "kha", "kasrah": "khi", "damma": "khu" },
+        "example": { "fatha": "خَط", "kasrah": "خِطَاب", "damma": "خُبْز" },
+        "meaning": { "fatha": "Line", "kasrah": "Letter", "damma": "Bread" }
+    },
+    {
+        "label": "ﺩ",
+        "name": "Dal",
+        "value": 8,
+        "fatha": "دَ",
+        "kasrah": "دِ",
+        "damma": "دُ",
+        "pronunciation": { "fatha": "da", "kasrah": "di", "damma": "du" },
+        "example": { "fatha": "دَار", "kasrah": "دِمَاغ", "damma": "دُب" },
+        "meaning": { "fatha": "House", "kasrah": "Brain", "damma": "Bear" }
+    },
+    {
+        "label": "ﺫ",
+        "name": "Dhal",
+        "value": 9,
+        "fatha": "ذَ",
+        "kasrah": "ذِ",
+        "damma": "ذُ",
+        "pronunciation": { "fatha": "dha", "kasrah": "dhi", "damma": "dhu" },
+        "example": { "fatha": "ذَكَر", "kasrah": "ذِكْرَى", "damma": "ذُباب" },
+        "meaning": { "fatha": "Male", "kasrah": "Memory", "damma": "Fly" }
+    },
+    {
+        "label": "ﺭ",
+        "name": "Ra",
+        "value": 10,
+        "fatha": "رَ",
+        "kasrah": "رِ",
+        "damma": "رُ",
+        "pronunciation": { "fatha": "ra", "kasrah": "ri", "damma": "ru" },
+        "example": { "fatha": "رَجُل", "kasrah": "رِيشَة", "damma": "رُوح" },
+        "meaning": { "fatha": "Man", "kasrah": "Feather", "damma": "Soul" }
+    },
+    {
+        "label": "ﺯ",
+        "name": "Zay",
+        "value": 11,
+        "fatha": "زَ",
+        "kasrah": "زِ",
+        "damma": "زُ",
+        "pronunciation": { "fatha": "za", "kasrah": "zi", "damma": "zu" },
+        "example": { "fatha": "زَهرَة", "kasrah": "زِر", "damma": "زُجَاج" },
+        "meaning": { "fatha": "Flower", "kasrah": "Button", "damma": "Glass" }
+    },
+    {
+        "label": "ﺱ",
+        "name": "Sin",
+        "value": 12,
+        "fatha": "سَ",
+        "kasrah": "سِ",
+        "damma": "سُ",
+        "pronunciation": { "fatha": "sa", "kasrah": "si", "damma": "su" },
+        "example": { "fatha": "سَفِينَة", "kasrah": "سِر", "damma": "سُور" },
+        "meaning": { "fatha": "Ship", "kasrah": "Secret", "damma": "Fence" }
+    },
+    {
+        "label": "ﺵ",
+        "name": "Shin",
+        "value": 13,
+        "fatha": "شَ",
+        "kasrah": "شِ",
+        "damma": "شُ",
+        "pronunciation": { "fatha": "sha", "kasrah": "shi", "damma": "shu" },
+        "example": { "fatha": "شَمس", "kasrah": "شِعْر", "damma": "شُجَاع" },
+        "meaning": { "fatha": "Sun", "kasrah": "Poetry", "damma": "Brave" }
+    },
+    {
+        "label": "ﺹ",
+        "name": "Sad",
+        "value": 14,
+        "fatha": "صَ",
+        "kasrah": "صِ",
+        "damma": "صُ",
+        "pronunciation": { "fatha": "sa", "kasrah": "si", "damma": "su" },
+        "example": {
+            "fatha": "صَحْرَاء",
+            "kasrah": "صِدْق",
+            "damma": "صُندوق"
+        },
+        "meaning": { "fatha": "Desert", "kasrah": "Honesty", "damma": "Box" }
+    },
+    {
+        "label": "ﺽ",
+        "name": "Dad",
+        "value": 15,
+        "fatha": "ضَ",
+        "kasrah": "ضِ",
+        "damma": "ضُ",
+        "pronunciation": { "fatha": "da", "kasrah": "di", "damma": "du" },
+        "example": { "fatha": "ضَوء", "kasrah": "ضِفْدَع", "damma": "ضُرُوس" },
+        "meaning": { "fatha": "Light", "kasrah": "Frog", "damma": "Teeth" }
+    },
+    {
+        "label": "ﻁ",
+        "name": "Taa",
+        "value": 16,
+        "fatha": "طَ",
+        "kasrah": "طِ",
+        "damma": "طُ",
+        "pronunciation": { "fatha": "ta", "kasrah": "ti", "damma": "tu" },
+        "example": { "fatha": "طَائِر", "kasrah": "طِفْل", "damma": "طُحْلُب" },
+        "meaning": { "fatha": "Bird", "kasrah": "Child", "damma": "Moss" }
+    },
+    {
+        "label": "ﻅ",
+        "name": "Zaa",
+        "value": 17,
+        "fatha": "ظَ",
+        "kasrah": "ظِ",
+        "damma": "ظُ",
+        "pronunciation": { "fatha": "za", "kasrah": "zi", "damma": "zu" },
+        "example": { "fatha": "ظَلام", "kasrah": "ظِلال", "damma": "ظُفْر" },
+        "meaning": { "fatha": "Darkness", "kasrah": "Shadows", "damma": "Nail" }
+    },
+    {
+        "label": "ﻉ",
+        "name": "Ayn",
+        "value": 18,
+        "fatha": "عَ",
+        "kasrah": "عِ",
+        "damma": "عُ",
+        "pronunciation": { "fatha": "a", "kasrah": "i", "damma": "u" },
+        "example": { "fatha": "عَين", "kasrah": "عِلم", "damma": "عُصفُور" },
+        "meaning": { "fatha": "Eye", "kasrah": "Knowledge", "damma": "Bird" }
+    },
+    {
+        "label": "ﻍ",
+        "name": "Ghayn",
+        "value": 19,
+        "fatha": "غَ",
+        "kasrah": "غِ",
+        "damma": "غُ",
+        "pronunciation": { "fatha": "gha", "kasrah": "ghi", "damma": "ghu" },
+        "example": { "fatha": "غَابَة", "kasrah": "غِذَاء", "damma": "غُرَاب" },
+        "meaning": { "fatha": "Forest", "kasrah": "Food", "damma": "Crow" }
+    },
+    {
+        "label": "ﻑ",
+        "name": "Fa",
+        "value": 20,
+        "fatha": "فَ",
+        "kasrah": "فِ",
+        "damma": "فُ",
+        "pronunciation": { "fatha": "fa", "kasrah": "fi", "damma": "fu" },
+        "example": {
+            "fatha": "فَاكِهَة",
+            "kasrah": "فِكْرَة",
+            "damma": "فُرَاش"
+        },
+        "meaning": { "fatha": "Fruit", "kasrah": "Idea", "damma": "Mattress" }
+    },
+    {
+        "label": "ﻕ",
+        "name": "Qaf",
+        "value": 21,
+        "fatha": "قَ",
+        "kasrah": "قِ",
+        "damma": "قُ",
+        "pronunciation": { "fatha": "qa", "kasrah": "qi", "damma": "qu" },
+        "example": { "fatha": "قَمر", "kasrah": "قِطَار", "damma": "قُفل" },
+        "meaning": { "fatha": "Moon", "kasrah": "Train", "damma": "Lock" }
+    },
+    {
+        "label": "ﻙ",
+        "name": "Kaf",
+        "value": 22,
+        "fatha": "كَ",
+        "kasrah": "كِ",
+        "damma": "كُ",
+        "pronunciation": { "fatha": "ka", "kasrah": "ki", "damma": "ku" },
+        "example": { "fatha": "كَلب", "kasrah": "كِتَاب", "damma": "كُرَة" },
+        "meaning": { "fatha": "Dog", "kasrah": "Book", "damma": "Ball" }
+    },
+    {
+        "label": "ﻝ",
+        "name": "Lam",
+        "value": 23,
+        "fatha": "لَ",
+        "kasrah": "لِ",
+        "damma": "لُ",
+        "pronunciation": { "fatha": "la", "kasrah": "li", "damma": "lu" },
+        "example": { "fatha": "لَيل", "kasrah": "لِسَان", "damma": "لُغَة" },
+        "meaning": { "fatha": "Night", "kasrah": "Tongue", "damma": "Language" }
+    },
+    {
+        "label": "ﻡ",
+        "name": "Meem",
+        "value": 24,
+        "fatha": "مَ",
+        "kasrah": "مِ",
+        "damma": "مُ",
+        "pronunciation": { "fatha": "ma", "kasrah": "mi", "damma": "mu" },
+        "example": { "fatha": "مَاء", "kasrah": "مِرآة", "damma": "مُحِيط" },
+        "meaning": { "fatha": "Water", "kasrah": "Mirror", "damma": "Ocean" }
+    },
+    {
+        "label": "ﻥ",
+        "name": "Noon",
+        "value": 25,
+        "fatha": "نَ",
+        "kasrah": "نِ",
+        "damma": "نُ",
+        "pronunciation": { "fatha": "na", "kasrah": "ni", "damma": "nu" },
+        "example": { "fatha": "نَار", "kasrah": "نِعْمَة", "damma": "نُجُوم" },
+        "meaning": { "fatha": "Fire", "kasrah": "Blessing", "damma": "Stars" }
+    },
+    {
+        "label": "ﻩ",
+        "name": "Ha",
+        "value": 26,
+        "fatha": "هَ",
+        "kasrah": "هِ",
+        "damma": "هُ",
+        "pronunciation": { "fatha": "ha", "kasrah": "hi", "damma": "hu" },
+        "example": { "fatha": "هَرم", "kasrah": "هِدَايَة", "damma": "هُدوء" },
+        "meaning": { "fatha": "Pyramid", "kasrah": "Guidance", "damma": "Calm" }
+    },
+    {
+        "label": "ﻭ",
+        "name": "Waw",
+        "value": 27,
+        "fatha": "وَ",
+        "kasrah": "وِ",
+        "damma": "وُ",
+        "pronunciation": { "fatha": "wa", "kasrah": "wi", "damma": "wu" },
+        "example": { "fatha": "وَجه", "kasrah": "وِقَايَة", "damma": "وُجُود" },
+        "meaning": {
+            "fatha": "Face",
+            "kasrah": "Protection",
+            "damma": "Existence"
+        }
+    },
+    {
+        "label": "ﻱ",
+        "name": "Ya",
+        "value": 28,
+        "fatha": "يَ",
+        "kasrah": "يِ",
+        "damma": "يُ",
+        "pronunciation": { "fatha": "ya", "kasrah": "yi", "damma": "yu" },
+        "example": { "fatha": "يَوم", "kasrah": "يِمَامَة", "damma": "يُوسف" },
+        "meaning": { "fatha": "Day", "kasrah": "Pigeon", "damma": "Joseph" }
+    },
+    {
+        "label": "ﺀ",
+        "name": "Hamzah",
+        "value": 29,
+        "fatha": "أَ",
+        "kasrah": "إِ",
+        "damma": "ؤُ",
+        "pronunciation": { "fatha": "a", "kasrah": "i", "damma": "u" },
+        "example": {
+            "fatha": "أَسَد",
+            "kasrah": "إِنسَان",
+            "damma": "ؤُمَنَاء"
+        },
+        "meaning": {
+            "fatha": "Lion",
+            "kasrah": "Human",
+            "damma": "Trustworthy people"
+        }
+    }
+]

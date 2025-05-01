@@ -1,0 +1,8 @@
+.input {
+    color: #3d44c4;
+}
+.input input {
+    border: 3px solid #3d44c4;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}

@@ -1,0 +1,49 @@
+.box {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 400px;
+    padding: 60px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.submitButton {
+    border-radius: 50px;
+}
+
+.login {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #3d44c4;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login a {
+    font-weight: bold;
+}
+.form {
+    width: 100%;
+}
+.formGroup {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.formGroup div {
+    width: 100%;
+    max-width: 350px;
+}
+
+@media (max-width: 600px) {
+    .box {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .formGroup div {
+        max-width: 100%;
+    }
+}

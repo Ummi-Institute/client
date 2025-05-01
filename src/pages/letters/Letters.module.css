@@ -1,0 +1,125 @@
+.container {
+    width: 100%;
+}
+.leftSection {
+    width: 30%;
+    min-width: fit-content;
+}
+.rightSection {
+    width: 60%;
+}
+
+.videoPlayer {
+    display: flex;
+    background: linear-gradient(90deg, #ffcc33, #ffb347);
+    border-radius: 20px;
+    min-width: 380px;
+    width: 380px;
+    height: 500px;
+    position: relative;
+    padding: 25px;
+}
+
+.videoDisplay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: fit-content;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.lettersGrid {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.lettersRow {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    overflow-x: scroll;
+}
+.letterBtnGrid {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    background-color: white;
+    color: black;
+    border: 4px solid #6829b3;
+    border-radius: 50%;
+}
+.letterBtnRow {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid #6829b3;
+    border-radius: 50%;
+}
+.activeLetterBtn {
+    background-color: #6829b3;
+    color: white;
+}
+
+.optionFormContainer {
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-top: 20px;
+    min-height: 350px;
+    border-radius: 10px;
+    background-color: #f3f3ff;
+    opacity: 1;
+    background-image: radial-gradient(#444df796 1.05px, transparent 1.05px),
+        radial-gradient(#444df77a 1.05px, #f3f3ff 1.05px);
+    background-size: 42px 42px;
+    background-position: 0 0, 21px 21px;
+}
+.letterOptionFormContainer {
+    width: 100%;
+    padding: 10px;
+    background-color: #f3f3ff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.letterName {
+    font-size: 34px;
+    font-weight: bold;
+    color: #333;
+}
+
+.letterSukoon {
+    font-size: 80px;
+    font-weight: bold;
+    color: #6829b3;
+}
+
+.letterExample {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.letterMeaning {
+    font-size: 20px;
+    color: #666;
+    margin-top: 5px;
+}
+.formBtn {
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 20px;
+}
+
+.formBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

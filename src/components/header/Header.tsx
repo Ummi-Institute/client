@@ -1,18 +1,24 @@
 import { Box, Flex, Overlay, rem, Stack, Transition } from '@mantine/core'
-import { useDisclosure } from '@mantine/hooks'
-import { FC } from 'react'
+import { useDisclosure, useViewportSize } from '@mantine/hooks'
+import { FC, useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Burger } from '@mantine/core'
 
 import Logo from '@/assets/icons/logo'
 import styles from './Header.module.css'
 import BrandButton from '../brandButton/BrandButton'
+import { useSelector } from 'react-redux'
+import { StoreState } from '@/store'
 
 interface MainLayoutHeaderType {
     hideBGColor?: boolean
 }
 const MainLayoutHeader = ({ hideBGColor }: MainLayoutHeaderType) => {
     const [opened, { toggle }] = useDisclosure(false)
+
+    const profile = useSelector((store: StoreState) => {
+        return store['profile-state']
+    })
 
     const links = [
         {
@@ -91,14 +97,14 @@ const MainLayoutHeader = ({ hideBGColor }: MainLayoutHeaderType) => {
                             </Box>
                             <BrandButton
                                 component={Link}
-                                to="/login"
+                                to={profile.me ? '/profile' : '/login'}
                                 radius="xl"
                                 color="#8D2EFF"
                                 mt={rem(24)}
                                 fullWidth
                                 onClick={toggle}
                             >
-                                Login / Register
+                                {profile.me ? 'My Account' : 'Login / Register'}
                             </BrandButton>
                         </Box>
                     )}
@@ -151,12 +157,12 @@ const MainLayoutHeader = ({ hideBGColor }: MainLayoutHeaderType) => {
                     <BrandButton
                         component={Link}
                         className={styles.accountButton}
-                        to="/login"
+                        to={profile.me ? '/profile' : '/login'}
                         radius="xl"
                         size="lg"
                         variant="primary"
                     >
-                        Login / Register
+                        {profile.me ? 'My Account' : 'Login / Register'}
                     </BrandButton>
 
                     <Burger
@@ -172,6 +178,18 @@ const MainLayoutHeader = ({ hideBGColor }: MainLayoutHeaderType) => {
 }
 
 const SectionLayoutHeader = () => {
+    const { width: viewportWidth } = useViewportSize()
+    const isMobile = viewportWidth < 768
+
+    const headerData = useSelector(
+        (state: StoreState) => state['header-states'],
+    )
+    const [headerDataState, setHeaderDataState] = useState(headerData)
+
+    useEffect(() => {
+        setHeaderDataState(headerData)
+    }, [headerData])
+
     return (
         <Flex
             component="header"
@@ -180,59 +198,141 @@ const SectionLayoutHeader = () => {
             justify="space-between"
             gap={20}
         >
-            <Link
-                to={'#'}
-                onClick={() => {
-                    history.back()
-                }}
-            >
-                <BrandButton
-                    size="lg"
-                    isGradient={true}
-                    style={{
-                        fontFamily: 'Coiny',
-                        fontSize: '2.5em',
-                        borderRadius: '20px',
-                        color: 'white',
-                    }}
-                    variant="primary"
-                    h={rem(80)}
-                >
-                    Back
-                </BrandButton>
-            </Link>
-            <BrandButton
-                size="lg"
-                isGradient={true}
-                isPattern={true}
-                style={{
-                    fontFamily: 'Coiny',
-                    fontSize: '2.5em',
-                    borderRadius: '40px',
-                    color: '#00005C',
-                }}
-                variant="secondary"
-                w="70%"
-                h={rem(80)}
-            >
-                Letters
-            </BrandButton>
-            <Link to="/">
-                <BrandButton
-                    size="lg"
-                    isGradient={true}
-                    style={{
-                        fontFamily: 'Coiny',
-                        fontSize: '2.5em',
-                        borderRadius: '20px',
-                        color: 'white',
-                    }}
-                    variant="primary"
-                    h={rem(80)}
-                >
-                    Home
-                </BrandButton>
-            </Link>
+            {isMobile && (
+                <>
+                    <Link
+                        to={'#'}
+                        onClick={() => {
+                            history.back()
+                        }}
+                    >
+                        <BrandButton
+                            isGradient={true}
+                            style={{
+                                fontFamily: 'Coiny',
+                                fontSize: '1em',
+                                borderRadius: '20px',
+                                color: 'white',
+                            }}
+                            variant="primary"
+                            borderWidth={2}
+                            h={rem(50)}
+                        >
+                            Back
+                        </BrandButton>
+                    </Link>
+
+                    <div>
+                        <span
+                            style={{
+                                fontFamily: 'Coiny',
+                                fontSize: '1em',
+                                color: '#00005C',
+                                textAlign: 'right',
+                                width: '100%',
+                                display: 'block',
+                            }}
+                        >
+                            {headerDataState.title || 'Title'}
+                        </span>
+                        <span
+                            style={{
+                                fontFamily: 'Catamaran',
+                                fontSize: '0.8em',
+                                color: '#00005C',
+                                fontWeight: 'bold',
+                                textAlign: 'right',
+                                width: '100%',
+                                display: 'block',
+                            }}
+                        >
+                            {headerDataState.subtitle || 'Subtitle'}
+                        </span>
+                    </div>
+                </>
+            )}
+            {!isMobile && (
+                <>
+                    <Link
+                        to={'#'}
+                        onClick={() => {
+                            history.back()
+                        }}
+                    >
+                        <BrandButton
+                            isGradient={true}
+                            style={{
+                                fontFamily: 'Coiny',
+                                fontSize: '2em',
+                                borderRadius: '20px',
+                                color: 'white',
+                            }}
+                            variant="primary"
+                            h={rem(70)}
+                        >
+                            Back
+                        </BrandButton>
+                    </Link>
+                    <BrandButton
+                        size="lg"
+                        isGradient={true}
+                        isPattern={true}
+                        style={{
+                            fontFamily: 'Coiny',
+                            fontSize: '2.5em',
+                            borderRadius: '40px',
+                            color: '#00005C',
+                        }}
+                        variant="secondary"
+                        w="70%"
+                        h={rem(70)}
+                    >
+                        <div>
+                            <span
+                                style={{
+                                    fontFamily: 'Coiny',
+                                    fontSize: '0.6em',
+                                    color: '#00005C',
+                                    fontWeight: 'bold',
+                                    textAlign: 'center',
+                                    width: '100%',
+                                    display: 'block',
+                                }}
+                            >
+                                {headerDataState.title || 'Title'}
+                            </span>
+                            <span
+                                style={{
+                                    fontFamily: 'Catamaran',
+                                    fontSize: '0.35em',
+                                    color: '#00005C',
+                                    fontWeight: 'bold',
+                                    textAlign: 'center',
+                                    width: '100%',
+                                    display: 'block',
+                                }}
+                            >
+                                {headerDataState.subtitle || 'Subtitle'}
+                            </span>
+                        </div>
+                    </BrandButton>
+                    <Link to="/">
+                        <BrandButton
+                            isGradient={true}
+                            style={{
+                                fontFamily: 'Coiny',
+                                fontSize: '2em',
+                                borderRadius: '20px',
+                                color: 'white',
+                            }}
+                            variant="primary"
+                            h={rem(70)}
+                        >
+                            Home
+                        </BrandButton>
+                    </Link>
+                </>
+            )}
         </Flex>
     )
 }

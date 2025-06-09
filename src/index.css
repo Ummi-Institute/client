@@ -33,6 +33,14 @@
     --gradient-secondary-button-color: #000;
 }
 
+html {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;

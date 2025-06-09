@@ -8,6 +8,7 @@ import AuditoriumImage from '@/assets/home/auditorium.svg'
 import TorritoriesImage from '@/assets/home/territoties.png'
 import BrandButton from '@/components/brandButton/BrandButton'
 import { Link } from 'react-router-dom'
+import { useViewportSize } from '@mantine/hooks'
 
 interface SectionsImageProps {
     gradient?: {
@@ -33,7 +34,7 @@ const SectionImage = ({
                 style={{
                     background: `linear-gradient(${gradient?.deg}deg, ${gradient?.from}, ${gradient?.to})`,
                 }}
-                p={rem(20)}
+                p={20}
                 className={styles.box}
             >
                 <Group
@@ -51,17 +52,19 @@ const SectionImage = ({
 }
 
 const Home = () => {
+    //CHECK BROSWER SIZE
+    const { width } = useViewportSize()
+    const isMobile = width < 768
+    const isTablet = width >= 768 && width < 1024
     return (
         <>
             <BackgroundImage src={HomeBackground} />
             <Flex
-                gap={rem(66)}
-                w={'100%'}
                 align={'center'}
-                justify={'center'}
+                justify={'space-evenly'}
                 wrap="wrap"
-                mb={rem(200)}
-                mt={rem(100)}
+                className={styles.container}
+                gap={20}
             >
                 <Link to={'/auditorium'}>
                     <Flex
@@ -72,8 +75,20 @@ const Home = () => {
                     >
                         <SectionImage
                             imageSrc={AuditoriumImage}
-                            width="416px"
-                            height="288px"
+                            width={
+                                isMobile
+                                    ? '300px'
+                                    : isTablet
+                                    ? '376px'
+                                    : '376px'
+                            }
+                            height={
+                                isMobile
+                                    ? '200px'
+                                    : isTablet
+                                    ? '248px'
+                                    : '248px'
+                            }
                             gradient={{
                                 from: '#FFCC33',
                                 to: '#FFB347',
@@ -87,7 +102,7 @@ const Home = () => {
                             isGradient={true}
                             style={{
                                 fontFamily: 'Coiny',
-                                fontSize: '2em',
+                                fontSize: isMobile ? '1em' : '1.5em',
                                 borderRadius: '40px',
                             }}
                         >
@@ -105,8 +120,20 @@ const Home = () => {
                     >
                         <SectionImage
                             imageSrc={TorritoriesImage}
-                            width="416px"
-                            height="288px"
+                            width={
+                                isMobile
+                                    ? '300px'
+                                    : isTablet
+                                    ? '376px'
+                                    : '376px'
+                            }
+                            height={
+                                isMobile
+                                    ? '200px'
+                                    : isTablet
+                                    ? '248px'
+                                    : '248px'
+                            }
                             gradient={{
                                 from: '#8D2EFF',
                                 to: '#6829B3',
@@ -121,7 +148,7 @@ const Home = () => {
                             isGradient={true}
                             style={{
                                 fontFamily: 'Coiny',
-                                fontSize: '2em',
+                                fontSize: isMobile ? '1em' : '1.5em',
                                 borderRadius: '40px',
                             }}
                         >

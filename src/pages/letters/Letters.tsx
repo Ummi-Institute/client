@@ -13,6 +13,8 @@ import myVideo from '@/assets/letters/videos/1.mp4'
 import LettersList from '@/json/letters.json'
 import SukoonList from '@/json/sukoon.json'
 import Vowels from '@/json/vowels.json'
+import { useDispatch } from 'react-redux'
+import { headerSlice } from '@/store/stateSlices/headerSlice'
 
 interface VideoSectionProp {
     videoSrc?: string
@@ -336,9 +338,17 @@ interface LettersProp {
 }
 
 const Letters = () => {
+    const dispatch = useDispatch()
     const [videoSrc] = useState(myVideo)
     const [activeOption, setActiveOption] = useState('letter')
     const [activeLetter, setActiveLetter] = useState(0)
+
+    dispatch(
+        headerSlice.actions.setUpdateHeader({
+            title: 'Letters',
+            subtitle: 'Learn Arabic letters and their sounds',
+        }),
+    )
 
     const onChangeOption = (value: string) => {
         setActiveOption(value)

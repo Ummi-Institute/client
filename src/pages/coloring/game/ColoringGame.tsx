@@ -5,11 +5,13 @@ import BackgroundImage from '@/components/backgroundImage/BackgroundImage'
 import styles from './ColoringGame.module.css'
 
 import ColoringBackground from '@/assets/backgrounds/auditorium/coloringBakground.png' // Replace with the actual background path
-import ColoringPaperBackground from '@/assets/backgrounds/auditorium/coloringBg.png' // Replace with the actual background path
+// import ColoringPaperBackground from '@/assets/backgrounds/auditorium/coloringBg.png' // Replace with the actual background path
 import Image1 from '@/assets/coloring/1.svg'
 import Image2 from '@/assets/coloring/2.svg'
 import Image3 from '@/assets/coloring/3.svg'
 import { useParams } from 'react-router-dom'
+import { headerSlice } from '@/store/stateSlices/headerSlice'
+import { useDispatch } from 'react-redux'
 
 const items = [
     { label: 'Vocabulary 1', value: '1', image: Image1 },
@@ -29,6 +31,7 @@ const items = [
 const ColoringGame = () => {
     const params = useParams()
     // const navigate = useNavigate()
+    const dispatch = useDispatch()
 
     if (!params.id) return (location.href = '/vocab_coloring')
 
@@ -37,15 +40,20 @@ const ColoringGame = () => {
     const data = items.find((e) => e.value === id)
     if (!data) return (location.href = '/vocab_coloring')
 
+    dispatch(
+        headerSlice.actions.setUpdateHeader({
+            title: `Coloring ${data.label}`,
+            subtitle: 'Optimize your vocabulary learning with coloring',
+        }),
+    )
+
     return (
         <>
             <BackgroundImage src={ColoringBackground} />
 
             <Group
-                w="100%"
                 style={{
                     justifyContent: 'center',
-                    marginTop: '50px',
                     flexDirection: 'column',
                 }}
                 className={styles.container}
@@ -54,8 +62,6 @@ const ColoringGame = () => {
                     svgUrl={data.image}
                     // palette={['#f00', '#0f0', '#00f']}
                     defaultColor="#0f0"
-                    width={600}
-                    height={400}
                     strokeColor="#333"
                     strokeWidth={1}
                     onRegionClick={(el, color) =>
@@ -94,7 +100,6 @@ export function ColoringPage({
     strokeWidth = 2,
     vectorEffect = 'non-scaling-stroke',
     shapeTags = ['path', 'rect', 'circle', 'ellipse', 'polygon', 'polyline'],
-    style,
     className,
 }: ColoringPageProps) {
     const [selectedColor, setSelectedColor] = useState(
@@ -167,7 +172,7 @@ export function ColoringPage({
     ])
 
     return (
-        <Stack align="center" style={style} className={className} w={'100%'}>
+        <Stack align="center" className={className} w={'100%'}>
             {/* Palette */}
             <SimpleGrid cols={palette.length}>
                 {palette.map((c) => (
@@ -188,12 +193,12 @@ export function ColoringPage({
             {/* SVG canvas */}
             <Box
                 className={styles.canvas}
-                style={{
-                    backgroundImage: `url(${ColoringPaperBackground})`,
-                    backgroundSize: 'cover',
-                }}
+                // style={{
+                //     backgroundImage: `url(${ColoringPaperBackground})`,
+                //     backgroundSize: 'cover',
+                // }}
             >
-                <div ref={containerRef} />
+                <div className={styles.canvasDiv} ref={containerRef} />
             </Box>
         </Stack>
     )

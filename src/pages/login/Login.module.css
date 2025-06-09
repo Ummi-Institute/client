@@ -2,7 +2,6 @@
     max-width: 900px;
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     min-height: 400px;
     padding: 60px;
@@ -10,7 +9,9 @@
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
-
+.title {
+    font-size: 1em;
+}
 .submitButton {
     border-radius: 50px;
 }
@@ -34,12 +35,18 @@
     max-width: 400px;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 800px), screen and (max-height: 800px) {
     .box {
         padding: 20px;
         margin-bottom: 20px;
     }
-    .form div {
+    .title {
+        font-size: 0.7em;
+    }
+    .formGroup div {
         max-width: 100%;
+    }
+    .formGroup label {
+        display: none !important;
     }
 }

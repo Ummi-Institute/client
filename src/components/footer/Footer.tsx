@@ -1,4 +1,4 @@
-import { Flex, rem, Text } from '@mantine/core'
+import { Flex, Text } from '@mantine/core'
 
 import styles from './Footer.module.css'
 
@@ -21,13 +21,12 @@ const Footer = ({ hide }: FooterType) => {
                         'linear-gradient(180deg,rgba(140, 46, 255, 0.8), #6829B3)',
                     fontFamily: 'Catamaran ',
                 }}
-                h={rem(112)}
+                h={'100%'}
             >
                 <Text
                     style={{
                         textAlign: 'center',
                     }}
-                    size="lg"
                     c={'var(--primary)'}
                 >
                     Copyright &copy; {currentYear} by UMMI. All rights reserved

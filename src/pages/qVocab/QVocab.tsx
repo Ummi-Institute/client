@@ -1,11 +1,28 @@
 import BackgroundImage from '@/components/backgroundImage/BackgroundImage'
 import BrandButton from '@/components/brandButton/BrandButton'
 import { Link } from 'react-router-dom'
+import { useViewportSize } from '@mantine/hooks'
 
 import QVocabBackground from '@/assets/backgrounds/auditorium/q_vocab.svg'
 import { Flex, Group, rem } from '@mantine/core'
 
+import styles from './QVocab.module.css'
+import { headerSlice } from '@/store/stateSlices/headerSlice'
+import { useDispatch } from 'react-redux'
+
 const QVocab = () => {
+    const dispatch = useDispatch()
+    //CHECK BROSWER SIZE
+    const { width } = useViewportSize()
+    const isMobile = width < 768
+
+    dispatch(
+        headerSlice.actions.setUpdateHeader({
+            title: 'Quranic Vocabulary',
+            subtitle: 'Learn Quranic Vocabulary',
+        }),
+    )
+
     const items = [
         {
             label: 'Animals',
@@ -39,15 +56,7 @@ const QVocab = () => {
     return (
         <>
             <BackgroundImage src={QVocabBackground} />
-            <Group
-                w={'100%'}
-                style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    marginTop: '50px',
-                }}
-            >
+            <Group className={styles.container}>
                 <Flex direction="column" gap="md" mt={rem(40)}>
                     {rows.map((row, rowIndex) => (
                         <Group
@@ -62,12 +71,14 @@ const QVocab = () => {
                                 <Link key={itemIndex} to={item.link}>
                                     <BrandButton
                                         variant="secondary"
-                                        size="xl"
+                                        size={isMobile ? 'sm' : 'lg'}
                                         isGradient={true}
                                         isPattern={true}
                                         style={{
                                             fontFamily: 'Coiny',
-                                            fontSize: '2.5em',
+                                            fontSize: isMobile
+                                                ? '1.5em'
+                                                : '2em',
                                             borderRadius: '40px',
                                             color: '#00005C',
                                             width: '400px',

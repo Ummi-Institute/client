@@ -4,9 +4,11 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    max-height: 100px;
 
     @media (min-width: rem(768px)) {
         padding: rem(40px) rem(130px);
+        max-height: 120px;
     }
 }
 

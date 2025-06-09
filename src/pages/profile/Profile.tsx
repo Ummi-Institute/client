@@ -1,37 +1,45 @@
-import styles from './Register.module.css'
-import { Group, rem, Flex, Title, Text, Alert } from '@mantine/core'
+import styles from './Profile.module.css'
+import { Group, rem, Flex, Title, Text, Alert, Box, Image } from '@mantine/core'
 import BackgroundImage from '@/components/backgroundImage/BackgroundImage'
+import AvatarDefault from '@/assets/profile/avatardefault.png'
 import Background from '@/assets/backgrounds/universal.svg'
 import BrandInput from '@/components/brandInput/BrandInput'
 import BrandButton from '@/components/brandButton/BrandButton'
-import { Link, useNavigate } from 'react-router-dom'
-import { useCreateUserMutation } from '@/store/apiSlices/public/userSlice'
 import { useForm } from '@mantine/form'
 import { ResponseFormat } from '@/types/api'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { isServerError } from '@/utils/checkError'
+import { useSelector } from 'react-redux'
+import { StoreState } from '@/store'
+import { useUpdateUserMutation } from '@/store/apiSlices/private/userSlice'
 
 interface FormState {
     firstName: string
     lastName: string
     email: string
-    password: string
-    confirm_password: string
+    country: string
 }
 
-const Register = () => {
+const Profile = () => {
     const [errorMessage, setErrorMessage] = useState<string | null>(null) // State for error message
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
-    const [createUser, { isLoading: isCreating }] = useCreateUserMutation()
+    const profile = useSelector((store: StoreState) => {
+        return store['profile-state']
+    })
+    const [user, setUser] = useState(profile.me)
+    useEffect(() => {
+        setUser(profile.me)
+    }, [profile])
+
+    const [updateUser, { isLoading: isUpdating }] = useUpdateUserMutation()
 
     const form = useForm<FormState>({
         initialValues: {
-            firstName: '',
-            lastName: '',
-            email: '',
-            password: '',
-            confirm_password: '',
+            firstName: user?.firstName || '',
+            lastName: user?.lastName || '',
+            email: user?.email || '',
+            country: user?.info?.country || '',
         },
 
         validate: {
@@ -46,16 +54,15 @@ const Register = () => {
         },
     })
 
-    const handleRegisterFormSubmit = form.onSubmit(async (values) => {
+    const handleUpdateUserFormSubmit = form.onSubmit(async (values) => {
         try {
             setErrorMessage(null)
 
-            const response = await createUser({
+            const response = await updateUser({
                 firstName: values.firstName,
                 lastName: values.lastName,
-                email: values.email.toLowerCase().trim(),
-                password: values.password,
-                confirmPassword: values.confirm_password,
+                email: '',
+                info: { country: values.country },
             }).unwrap()
 
             if (response.data) {
@@ -63,7 +70,7 @@ const Register = () => {
             }
 
             if (!response.data) {
-                navigate('/login')
+                alert(response?.message || '')
             }
         } catch (error) {
             if (isServerError(error)) {
@@ -85,19 +92,43 @@ const Register = () => {
     return (
         <>
             <BackgroundImage src={Background} opacity={0.2} />
-            <Flex
-                className={styles.container}
-                justify="center"
-                wrap={'wrap'}
-                gap={40}
-            >
-                <Group bg={'#fff'} className={styles.box}>
+            <Flex className={styles.container} wrap={'wrap'} gap={40}>
+                <Group className={styles.leftBox}>
+                    <Flex
+                        direction={'column'}
+                        justify={'center'}
+                        align={'center'}
+                    >
+                        <Box className={styles.userAvatarBox}>
+                            <Image src={AvatarDefault} />
+                        </Box>
+                        <Text style={{ fontSize: '1.3rem' }}>
+                            {user ? user.firstName + ' ' + user.lastName : ''}
+                        </Text>
+                        <BrandButton
+                            borderWidth={2}
+                            style={{ fontFamily: 'Coiny' }}
+                            mt={10}
+                        >
+                            My Downloads
+                        </BrandButton>
+                        <BrandButton
+                            borderWidth={2}
+                            style={{ fontFamily: 'Coiny' }}
+                            mt={10}
+                        >
+                            My Certificates
+                        </BrandButton>
+                    </Flex>
+                </Group>
+
+                <Group className={styles.contactBox}>
                     <Title order={1} c={'#151965'}>
-                        <span className={styles.title}>Register</span>
+                        <span className={styles.title}>My Profile</span>
                     </Title>
                     <form
                         className={styles.form}
-                        onSubmit={handleRegisterFormSubmit}
+                        onSubmit={handleUpdateUserFormSubmit}
                     >
                         {errorMessage && (
                             <Alert my={10} color="red" variant="filled">
@@ -144,57 +175,42 @@ const Register = () => {
                                 }}
                                 required
                             />
-                            <div></div>
                             <BrandInput
                                 size="1.2em"
-                                label="Password"
-                                placeholder="Password"
-                                type="password"
-                                key={form.key('password')}
-                                value={form.getValues().password}
+                                label="Country"
+                                placeholder="Country"
+                                type="text"
+                                key={form.key('country')}
+                                value={form.getValues().country}
                                 onChange={async (e) => {
                                     form.setFieldValue(
-                                        'password',
-                                        e.target.value,
-                                    )
-                                }}
-                                required
-                            />
-                            <BrandInput
-                                size="1.2em"
-                                label="Confirm Password"
-                                placeholder="Confirm Password"
-                                type="password"
-                                key={form.key('confirm_password')}
-                                value={form.getValues().confirm_password}
-                                onChange={async (e) => {
-                                    form.setFieldValue(
-                                        'confirm_password',
+                                        'country',
                                         e.target.value,
                                     )
                                 }}
                                 required
                             />
                         </Group>
-                        <BrandButton
-                            mt={rem(40)}
-                            variant="secondary"
-                            size="md"
-                            className={styles.submitButton}
-                            type="submit"
-                            loading={isCreating}
-                        >
-                            Register
-                        </BrandButton>
-                        <Text
-                            mt={rem(20)}
-                            size="1.2em"
-                            c={'#151965'}
-                            className={styles.login}
-                        >
-                            Already have an account?{' '}
-                            <Link to="/login">Login</Link>
-                        </Text>
+                        <Flex justify={'space-between'} w={'80%'} wrap={'wrap'}>
+                            <BrandButton
+                                mt={rem(40)}
+                                variant="secondary"
+                                size="md"
+                                className={styles.submitButton}
+                            >
+                                Choose Avatar
+                            </BrandButton>
+                            <BrandButton
+                                mt={rem(40)}
+                                variant="secondary"
+                                size="md"
+                                className={styles.submitButton}
+                                type="submit"
+                                loading={isUpdating}
+                            >
+                                Update
+                            </BrandButton>
+                        </Flex>
                     </form>
                 </Group>
             </Flex>
@@ -202,4 +218,4 @@ const Register = () => {
     )
 }
 
-export default Register
+export default Profile

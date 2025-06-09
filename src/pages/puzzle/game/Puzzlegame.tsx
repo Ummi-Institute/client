@@ -1,14 +1,18 @@
 import { useEffect, useState } from 'react'
 
-import { Flex, Box, rem, Text } from '@mantine/core'
+import { Flex, Box, Text } from '@mantine/core'
 import BackgroundImage from '@/components/backgroundImage/BackgroundImage'
 import PuzzleBg from '@/assets/backgrounds/auditorium/puzzle_game.png'
 import JigsawPuzzle, { Difficulty } from './PuzzleCanvas'
 import Panel, { PanelSelect } from '@/components/panel/Panel'
+import { useViewportSize } from '@mantine/hooks'
+import styles from './PuzzleGame.module.css'
 
 import juz1Image from '@/assets/puzzle/1.jpg'
 import juz2Image from '@/assets/puzzle/2.jpg'
 import juz3Image from '@/assets/puzzle/3.jpg'
+import { headerSlice } from '@/store/stateSlices/headerSlice'
+import { useDispatch } from 'react-redux'
 
 const puzzleImages = {
     one: juz1Image,
@@ -18,6 +22,18 @@ const puzzleImages = {
 
 const MakhrajPuzzle = () => {
     // const params = useParams()
+    // const navigate = useNavigate()
+    const dispatch = useDispatch()
+
+    dispatch(
+        headerSlice.actions.setUpdateHeader({
+            title: 'Makhraj Puzzle',
+            subtitle: 'Learn Makhraj with puzzle game',
+        }),
+    )
+
+    const { width } = useViewportSize()
+    const isMobile = width < 868
 
     type PuzzleType = 'one' | 'two' | 'three'
 
@@ -33,18 +49,11 @@ const MakhrajPuzzle = () => {
         <>
             <BackgroundImage src={PuzzleBg} />
 
-            <Flex
-                justify="center"
-                align="start"
-                direction="row"
-                wrap={'wrap'}
-                gap="lg"
-                style={{ padding: rem(20), marginTop: rem(40) }}
-            >
+            <Flex gap="lg" className={styles.container}>
                 {/* Settings Panel */}
-                <Panel title="Setting" defaultExpanded={true} width={300}>
+                <Panel title="Setting" defaultExpanded={true} width={270}>
                     <Box mb="md">
-                        <Text fz="md" mb={4} c="#7048e8">
+                        <Text fz="md" c="#7048e8">
                             Type :
                         </Text>
                         <PanelSelect
@@ -61,7 +70,7 @@ const MakhrajPuzzle = () => {
                     </Box>
 
                     <Box>
-                        <Text fz="md" mb={4} c="#7048e8">
+                        <Text fz="md" c="#7048e8">
                             Difficulty :
                         </Text>
                         <Flex align="center" gap="sm">
@@ -91,19 +100,18 @@ const MakhrajPuzzle = () => {
                         alignItems: 'center',
                         justifyContent: 'center',
                         width: 'auto',
-                        maxWidth: 850,
+                        maxWidth: isMobile ? '100%' : '850px',
                         height: 'auto',
                         borderRadius: 2,
                         position: 'relative',
                         background: 'white',
-                        padding: '10px',
                         border: '1px solid yellow',
                     }}
                 >
                     <JigsawPuzzle
                         imageUrl={currentImage as string}
-                        containerWidth={800}
-                        containerHeight={700}
+                        containerWidth={isMobile ? 600 : 800}
+                        containerHeight={isMobile ? 500 : 700}
                         difficulty={difficulty}
                         onComplete={() => console.log('🎉 Puzzle completed!')}
                         onDragStart={(id) =>

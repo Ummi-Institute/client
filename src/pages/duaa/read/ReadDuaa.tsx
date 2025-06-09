@@ -10,9 +10,20 @@ import IconMicrophone from '@/assets/icons/microphone'
 
 // Audio
 import Duaa2 from '@/assets/audio/duaa/dua 2.opus'
+import { headerSlice } from '@/store/stateSlices/headerSlice'
+import { useDispatch } from 'react-redux'
 const duaaText = 'رَبَّنَا تَقَبَّلْ مِنَّا إِنَّكَ أَنتَ السَّمِيعُ الْعَلِيمُ'
 
 const ReadDuaa = () => {
+    const dispatch = useDispatch()
+
+    dispatch(
+        headerSlice.actions.setUpdateHeader({
+            title: 'Duaa 2',
+            subtitle: 'Learn about this Duaa and its meaning',
+        }),
+    )
+
     const [isPlaying, setIsPlaying] = useState(false)
     const [progress, setProgress] = useState(0)
     const [sliderMax, setSliderMax] = useState(100)

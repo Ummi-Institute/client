@@ -1,12 +1,29 @@
 import BackgroundImage from '@/components/backgroundImage/BackgroundImage'
 import BrandButton from '@/components/brandButton/BrandButton'
 import { Link } from 'react-router-dom'
+import { useViewportSize } from '@mantine/hooks'
 
 import DuaaBackground from '@/assets/backgrounds/auditorium/duaa.png'
 import { Flex, Group, rem } from '@mantine/core'
 import BulbIcon from '@/assets/icons/bulb'
 
+import styles from './Duaa.module.css'
+import { headerSlice } from '@/store/stateSlices/headerSlice'
+import { useDispatch } from 'react-redux'
+
 const Duaa = () => {
+    const dispatch = useDispatch()
+    //CHECK BROSWER SIZE
+    const { width } = useViewportSize()
+    const isMobile = width < 768
+
+    dispatch(
+        headerSlice.actions.setUpdateHeader({
+            title: 'Duaa',
+            subtitle: 'Learn about Duaa',
+        }),
+    )
+
     const items = [
         {
             label: `Du'aa 1`,
@@ -48,15 +65,7 @@ const Duaa = () => {
     return (
         <>
             <BackgroundImage src={DuaaBackground} />
-            <Group
-                w={'100%'}
-                style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    marginTop: '50px',
-                }}
-            >
+            <Group className={styles.container}>
                 <Flex direction="column" gap="md" mt={rem(40)}>
                     {rows.map((row, rowIndex) => (
                         <Group
@@ -71,15 +80,17 @@ const Duaa = () => {
                                 <Link key={itemIndex} to={item.link}>
                                     <BrandButton
                                         variant="secondary"
-                                        size="xl"
+                                        size={isMobile ? 'md' : 'lg'}
                                         isGradient={true}
                                         isPattern={true}
                                         style={{
                                             fontFamily: 'Coiny',
-                                            fontSize: '2.5em',
+                                            fontSize: isMobile
+                                                ? '1.5em'
+                                                : '2.5em',
                                             borderRadius: '40px',
                                             color: '#00005C',
-                                            width: '400px',
+                                            width: isMobile ? '200px' : '400px',
                                         }}
                                         h={rem(70)}
                                         rightSection={

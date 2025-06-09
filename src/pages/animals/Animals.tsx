@@ -7,6 +7,8 @@ import BrandButton from '@/components/brandButton/BrandButton'
 
 import LionImage from '@/assets/animals/lion.png'
 import ElephantImage from '@/assets/animals/elephant.png'
+import { headerSlice } from '@/store/stateSlices/headerSlice'
+import { useDispatch } from 'react-redux'
 
 // Sample data for animals with Arabic names and English translations
 const animals = [
@@ -18,6 +20,15 @@ const animals = [
 ]
 
 const Animals = () => {
+    const dispatch = useDispatch()
+    //CHECK BROSWER SIZE
+    dispatch(
+        headerSlice.actions.setUpdateHeader({
+            title: 'Animals',
+            subtitle: 'Learn about animals in Arabic',
+        }),
+    )
+
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const handleNext = () => {
@@ -41,14 +52,7 @@ const Animals = () => {
     return (
         <>
             <BackgroundImage src={Background} opacity={0.2} />
-            <Flex
-                className={styles.container}
-                justify="center"
-                align="center"
-                direction="column"
-                gap={20}
-                p={rem(20)}
-            >
+            <Flex className={styles.container} gap={20} p={rem(20)}>
                 <Group bg={'#fff'} className={styles.box}>
                     <Title order={1} size={30} c={'#151965'}>
                         <span className={styles.title}>Animals</span>
@@ -62,8 +66,8 @@ const Animals = () => {
                     <Image
                         src={animals[currentIndex].image}
                         alt={animals[currentIndex].eng}
-                        width={200}
-                        height={200}
+                        width={100}
+                        height={100}
                         onClick={() =>
                             pronounceAnimal(animals[currentIndex].name)
                         }

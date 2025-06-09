@@ -5,6 +5,7 @@ import {
     Select as MantineSelect,
     NumberInput as MantineNumberInput,
 } from '@mantine/core'
+import { useViewportSize } from '@mantine/hooks'
 
 interface PanelProps {
     title: string
@@ -19,6 +20,9 @@ const Panel = ({
     defaultExpanded = false,
     width = 320,
 }: PanelProps) => {
+    const { width: viewportWidth } = useViewportSize()
+    const isMobile = viewportWidth < 768
+
     const [isExpanded, setIsExpanded] = useState(defaultExpanded)
 
     return (
@@ -27,7 +31,7 @@ const Panel = ({
                 background: 'white',
                 border: '2px solid #7048e8',
                 borderRadius: 20,
-                padding: '20px 30px',
+                padding: isMobile ? 10 : 20,
                 width: typeof width === 'number' ? `${width}px` : width,
                 maxWidth: typeof width === 'number' ? `${width}px` : width,
                 boxShadow: '0px 4px 8px rgba(0,0,0,0.1)',
@@ -42,7 +46,20 @@ const Panel = ({
             >
                 {isExpanded ? '▼' : '▶'} {title}
             </Text>
-            {isExpanded && <Box mt={10}>{children}</Box>}
+            {isExpanded && (
+                <Box
+                    style={{
+                        display: 'flex',
+                        flexDirection: isMobile ? 'row' : 'column',
+                        gap: isMobile ? 10 : 5,
+                        alignItems: 'flex-start',
+                        justifyContent: 'flex-start',
+                    }}
+                    mt={10}
+                >
+                    {children}
+                </Box>
+            )}
         </Box>
     )
 }
@@ -159,6 +176,7 @@ export const PanelSelect = ({ data, value, onChange }: SelectProps) => (
                 backgroundColor: '#f9f9ff',
                 fontWeight: 600,
                 borderRadius: '4px',
+                textAlign: 'center',
             },
             dropdown: {
                 borderColor: '#7048e8',

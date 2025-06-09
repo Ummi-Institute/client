@@ -1,3 +1,17 @@
+.container {
+    width: 100%;
+    max-width: 900px;
+    height: 100vh;
+    max-height: calc(100vh - 210px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .box {
     border-radius: 15px;
 }

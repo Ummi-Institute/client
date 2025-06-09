@@ -1,3 +1,14 @@
+.container {
+    width: 100%;
+    max-width: 100%;
+    height: 80vh;
+    max-height: 70vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
 .box {
     max-width: 900px;
     width: 100%;
@@ -100,4 +111,31 @@
     background-color: red;
     border-radius: 50%;
     margin-top: 8px;
+}
+
+@media screen and (max-width: 868px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        max-width: 90%;
+        width: 90%;
+        padding: 20px;
+        margin-bottom: 0px;
+    }
+    .sliderBox {
+        width: 150px;
+        height: 40px;
+    }
+    .recorderContainer {
+        padding: 10px;
+    }
+    .recorderStatus {
+        font-size: 16px;
+    }
+    .recorderTimer {
+        font-size: 14px;
+    }
 }

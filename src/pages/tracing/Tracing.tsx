@@ -7,6 +7,8 @@ import { Box, Flex, Group, Select } from '@mantine/core'
 import styles from './Tracing.module.css'
 import LetterTracer from './letterTracer/LetterTracer'
 import { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { headerSlice } from '@/store/stateSlices/headerSlice'
 
 // Arabic alphabet letters (28 letters)
 const defaultLetters = [
@@ -50,6 +52,13 @@ const defaultColors = [
 ]
 
 const Tracing = () => {
+    const dispatch = useDispatch()
+    dispatch(
+        headerSlice.actions.setUpdateHeader({
+            title: 'Tracing',
+            subtitle: 'Learn Arabic letters by tracing',
+        }),
+    )
     const [currentIndex, setCurrentIndex] = useState(0)
     const [selectedColor, setSelectedColor] = useState(defaultColors[0])
 

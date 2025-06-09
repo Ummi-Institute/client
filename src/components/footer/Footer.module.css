@@ -4,4 +4,11 @@
     margin-top: 64px;
     position: fixed;
     bottom: 0px;
+    height: 10%;
+    font-size: 1em;
+}
+@media screen and (max-height: 670px) {
+    .footer {
+        display: none;
+    }
 }

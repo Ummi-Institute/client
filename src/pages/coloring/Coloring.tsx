@@ -8,8 +8,19 @@ import Image2 from '@/assets/coloring/2.svg'
 import Image3 from '@/assets/coloring/3.svg'
 
 import styles from './Coloring.module.css'
+import { headerSlice } from '@/store/stateSlices/headerSlice'
+import { useDispatch } from 'react-redux'
 
 const Coloring = () => {
+    const dispatch = useDispatch()
+
+    dispatch(
+        headerSlice.actions.setUpdateHeader({
+            title: 'Vocabulary Coloring',
+            subtitle: 'Optimize your vocabulary learning with coloring',
+        }),
+    )
+
     const items = [
         { label: 'Vocabulary 1', value: '1', image: Image1 },
         { label: 'Vocabulary 1', value: '2', image: Image2 },

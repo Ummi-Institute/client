@@ -33,112 +33,109 @@ import PrivateRoute from './hocs/privateRoute'
 import PublicRoute from './hocs/publicRoute'
 import PublicAuthRoute from './hocs/publicAuthRoute'
 
-const router = createBrowserRouter(
-    [
-        {
-            path: '/',
-            element: (
-                <PublicRoute>
-                    <MainLayout />
-                </PublicRoute>
-            ),
-            children: [
-                {
-                    path: '/',
-                    element: <Home />,
-                },
-                {
-                    path: '/social',
-                    element: <Social />,
-                },
-                {
-                    path: '/auditorium',
-                    element: <Auditorium />,
-                },
-            ],
-        },
-        {
-            element: (
-                <PublicAuthRoute>
-                    <MainLayout />
-                </PublicAuthRoute>
-            ),
-            children: [
-                {
-                    path: '/login',
-                    element: <Login />,
-                },
-                {
-                    path: '/register',
-                    element: <Register />,
-                },
-            ],
-        },
-        {
-            element: (
-                <PrivateRoute>
-                    <MainLayout />
-                </PrivateRoute>
-            ),
-            children: [
-                {
-                    path: '/profile',
-                    element: <Profile />,
-                },
-            ],
-        },
-        {
-            element: (
-                <PublicRoute>
-                    <SectionLayout />
-                </PublicRoute>
-            ),
-            children: [
-                {
-                    path: '/letters',
-                    element: <Letters />,
-                },
-                {
-                    path: '/q_vocab',
-                    element: <QVocab />,
-                },
-                {
-                    path: '/animals',
-                    element: <Animals />,
-                },
-                {
-                    path: '/duaa',
-                    element: <Duaa />,
-                },
-                {
-                    path: '/duaa/:id',
-                    element: <ReadDuaa />,
-                },
-                {
-                    path: '/puzzle',
-                    element: <Puzzle />,
-                },
-                {
-                    path: '/puzzle/:id',
-                    element: <Puzzlegame />,
-                },
-                {
-                    path: '/tracing',
-                    element: <Tracing />,
-                },
-                {
-                    path: '/vocab_coloring',
-                    element: <Coloring />,
-                },
-                {
-                    path: '/vocab_coloring/:id',
-                    element: <ColoringGame />,
-                },
-            ],
-        },
-    ],
-    { basename: '/client' },
-)
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: (
+            <PublicRoute>
+                <MainLayout />
+            </PublicRoute>
+        ),
+        children: [
+            {
+                path: '/',
+                element: <Home />,
+            },
+            {
+                path: '/social',
+                element: <Social />,
+            },
+            {
+                path: '/auditorium',
+                element: <Auditorium />,
+            },
+        ],
+    },
+    {
+        element: (
+            <PublicAuthRoute>
+                <MainLayout />
+            </PublicAuthRoute>
+        ),
+        children: [
+            {
+                path: '/login',
+                element: <Login />,
+            },
+            {
+                path: '/register',
+                element: <Register />,
+            },
+        ],
+    },
+    {
+        element: (
+            <PrivateRoute>
+                <MainLayout />
+            </PrivateRoute>
+        ),
+        children: [
+            {
+                path: '/profile',
+                element: <Profile />,
+            },
+        ],
+    },
+    {
+        element: (
+            <PublicRoute>
+                <SectionLayout />
+            </PublicRoute>
+        ),
+        children: [
+            {
+                path: '/letters',
+                element: <Letters />,
+            },
+            {
+                path: '/q_vocab',
+                element: <QVocab />,
+            },
+            {
+                path: '/animals',
+                element: <Animals />,
+            },
+            {
+                path: '/duaa',
+                element: <Duaa />,
+            },
+            {
+                path: '/duaa/:id',
+                element: <ReadDuaa />,
+            },
+            {
+                path: '/puzzle',
+                element: <Puzzle />,
+            },
+            {
+                path: '/puzzle/:id',
+                element: <Puzzlegame />,
+            },
+            {
+                path: '/tracing',
+                element: <Tracing />,
+            },
+            {
+                path: '/vocab_coloring',
+                element: <Coloring />,
+            },
+            {
+                path: '/vocab_coloring/:id',
+                element: <ColoringGame />,
+            },
+        ],
+    },
+])
 
 function App() {
     return (

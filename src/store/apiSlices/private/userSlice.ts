@@ -10,6 +10,12 @@ interface UpdatePayload {
     email?: string
     info?: any
 }
+interface UpdateAvatarPayload {
+    gender: 'boy' | 'girl'
+    skinTone: string
+    hairColor?: string
+    hairStyle?: string
+}
 
 export const userSlice = createApi({
     reducerPath: 'user-private',
@@ -30,8 +36,22 @@ export const userSlice = createApi({
                 body: data,
             }),
         }),
+        updateAvatar: builder.mutation<
+            ResponseFormat<undefined>,
+            UpdateAvatarPayload
+        >({
+            query: (data) => ({
+                url: `/user/update/avatar`,
+                method: 'PATCH',
+                body: data,
+            }),
+        }),
     }),
 })
 
-export const { useLazyProfileQuery, useProfileQuery, useUpdateUserMutation } =
-    userSlice
+export const {
+    useLazyProfileQuery,
+    useProfileQuery,
+    useUpdateUserMutation,
+    useUpdateAvatarMutation,
+} = userSlice

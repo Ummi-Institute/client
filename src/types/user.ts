@@ -4,6 +4,12 @@ export interface User {
     firstName: string
     lastName: string
     info: any
+    avatar: {
+        gender: 'boy' | 'girl'
+        skinTone: string
+        hairColor?: string
+        hairStyle?: string
+    }
     role: UserRole
     createdAt: Date
     updatedAt: Date

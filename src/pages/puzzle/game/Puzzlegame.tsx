@@ -6,7 +6,7 @@ import PuzzleBg from '@/assets/backgrounds/auditorium/puzzle_game.png'
 import JigsawPuzzle, { Difficulty } from './PuzzleCanvas'
 import Panel, { PanelSelect } from '@/components/panel/Panel'
 import { useViewportSize } from '@mantine/hooks'
-import styles from './PuzzleGame.module.css'
+import styles from './Puzzlegame.module.css'
 
 import juz1Image from '@/assets/puzzle/1.jpg'
 import juz2Image from '@/assets/puzzle/2.jpg'
